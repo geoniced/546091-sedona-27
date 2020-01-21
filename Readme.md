@@ -1,7 +1,7 @@
 # Личный проект «Седона»
 
 * Студент: [Ivan Kashin](https://up.htmlacademy.ru/htmlcss/27/user/546091).
-* Наставник: `Неизвестно`.
+* Наставник: [Никита Сигов](https://htmlacademy.ru/profile/id17860).
 
 ---
 
