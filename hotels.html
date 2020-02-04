@@ -24,7 +24,66 @@
 
       <section>
         <h2 class="visually-hidden">Фильтр по гостиницам</h2>
-        <!-- Пока не делаю -->
+
+        <form action="https://echo.htmlacademy.ru" method="get">
+          <fieldset>
+            <legend>Инфраструктура:</legend>
+
+            <ul>
+              <li>
+                <input type="checkbox" name="infrastructure-pool" id="infrastructure-pool" checked>
+                <label for="infrastructure-pool">Бассейн</label>
+              </li>
+              <li>
+                <input type="checkbox" name="infrastructure-parking" id="infrastructure-parking">
+                <label for="infrastructure-parking">Парковка</label>
+              </li>
+              <li>
+                <input type="checkbox" name="infrastructure-wifi" id="infrastructure-wifi">
+                <label for="infrastructure-wifi">Wi-fi</label>
+              </li>
+            </ul>
+          </fieldset>
+
+          <fieldset>
+            <legend>Тип жилья:</legend>
+
+            <ul>
+              <li>
+                <input type="checkbox" name="housing-hotel" id="housing-hotel" checked>
+                <label for="housing-hotel">Гостиница</label>
+              </li>
+              <li>
+                <input type="checkbox" name="housing-motel" id="housing-motel" checked>
+                <label for="housing-motel">Мотель</label>
+              </li>
+              <li>
+                <input type="checkbox" name="housing-apartments" id="housing-apartments" checked>
+                <label for="housing-apartments">Гостиница</label>
+              </li>
+            </ul>
+          </fieldset>
+
+          <fieldset>
+            <legend>Стоимость в сутки (Р):</legend>
+
+            <div class="range-slider">
+              <p>
+                <label for="cost-min">От 0</label>
+                <input type="number" name="cost-min" id="cost-min" value="0">
+
+                <label for="cost-max">До 3000</label>
+                <input type="number" name="cost-max" id="cost-max" value="3000">
+              </p>
+
+              <div class="range-slider-track">
+                <div class="range-slider-pin range-slider-pin-min"></div>
+                <div class="range-slider-pin range-slider-pin-max"></div>
+              </div>
+            </div>
+          </fieldset>
+          <button type="submit">Показать</button>
+        </form>
       </section>
 
       <section>
