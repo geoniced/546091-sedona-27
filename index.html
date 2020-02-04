@@ -21,12 +21,12 @@
     </header>
 
     <main>
-      <h1>Добро пожаловать в город Седона</h1>
+      <h1 class="visually-hidden">Добро пожаловать в город Седона</h1>
 
       <section>
         <div><!-- Потом будет блоком с бэкграундом и скрытыми h2/p -->
-          <h2>Sedona</h2>
-          <p>Welcome to the gorgeous Sedona. Because the Grand Canyon sucks!</p>
+          <h2 class="visually-hidden">Sedona</h2>
+          <p class="visually-hidden">Welcome to the gorgeous Sedona. Because the Grand Canyon sucks!</p>
         </div>
 
         <h3>
@@ -37,7 +37,7 @@
       </section>
 
       <section>
-        <h2>Почему Седона круче, чем Гранд Каньон</h2>
+        <h2 class="visually-hidden">Почему Седона круче, чем Гранд Каньон</h2>
 
         <div>
           <div>
@@ -127,14 +127,32 @@
       </section>
 
       <section>
-        <h2>Поиск гостиницы в Седоне</h2>
-        <!-- Здесь будет форма поиска гостиницы в Седоне -->
-        <!-- Сделал как кнопку, хоть форма должна субмитить данные, но формы пока не изучали потому просто кнопка -->
-        <button type="button">Найти</button>
+        <h2 class="visually-hidden">Поиск гостиницы в Седоне</h2>
+
+        <form action="https://echo.htmlacademy.ru" method="get">
+          <p>
+            <label for="booking-check-in">Дата заезда:</label>
+            <input type="date" name="booking-check-in" id="booking-check-in" value="2017-04-24">
+          </p>
+          <p>
+            <label for="booking-check-out">Дата выезда:</label>
+            <input type="date" name="booking-check-out" id="booking-check-out" value="2017-07-04">
+          </p>
+          <p>
+            <label for="booking-adults">Взрослые:</label>
+            <input type="number" name="booking-adults" id="booking-adults" placeholder="2" value="">
+          </p>
+          <p>
+            <label for="booking-children">Дети:</label>
+            <input type="number" name="booking-children" id="booking-children" placeholder="0" value="">
+          </p>
+
+          <button type="submit">Найти</button>
+        </form>
       </section>
 
       <section>
-        <h2>Как проехать до Седоны</h2>
+        <h2 class="visually-hidden">Как проехать до Седоны</h2>
         <img src="img/map.jpg" width="1200" height="593" alt="Карта Седоны">
       </section>
     </main>
