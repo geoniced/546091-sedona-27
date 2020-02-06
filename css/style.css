@@ -1,0 +1,56 @@
+body {
+  margin: 0;
+  padding: 0;
+
+  font-family: "PT Sans", Arial, sans-serif;
+  font-size: 14px;
+  line-height: 26px;
+  color: #000000;
+  text-transform: uppercase;
+
+  background-color: #f2f2f2;
+}
+
+a {
+  text-decoration: none;
+}
+
+.main-navigation {
+  background-color: #ffffff;
+}
+
+.site-navigation {
+  list-style: none;
+}
+
+.site-navigation a {
+  color: #000000;
+}
+
+.site-navigation a:hover,
+.site-navigation a:focus {
+  color: #81b3d2;
+}
+
+.site-navigation a:active {
+  color: rgba(0, 0, 0, 0.3);
+}
+
+.site-navigation-current a,
+.site-navigation-current a:hover,
+.site-navigation-current a:focus,
+.site-navigation-current a:active {
+  color: #766357;
+}
+
+.main-intro {
+  background-color: #ffffff;
+}
+
+.main-intro-logo {
+  background-color: #55aaff;
+  background-image: url("../img/bg-logo.jpg");
+  background-position: 0 0;
+  background-size: contain; /* Размеры будут дальше */
+  background-repeat: no-repeat;
+}
