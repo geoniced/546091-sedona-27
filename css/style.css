@@ -15,6 +15,46 @@ a {
   text-decoration: none;
 }
 
+.button {
+  font: inherit;
+  color: #ffffff;
+  text-align: center;
+  vertical-align: middle;
+  text-transform: uppercase;
+
+  background-color: #766357;
+  border: none;
+}
+
+.button:hover,
+.button:focus {
+  background-color: #604e43;
+}
+
+.button:active {
+  color: rgba(255, 255, 255, 0.3);
+
+  background-color: #503e33;
+}
+
+.button-large {
+  font-size: 21px;
+  line-height: 26px;
+}
+
+.button-blue {
+  background-color: #81b3d2;
+}
+
+.button-blue:hover,
+.button-blue:focus {
+  background-color: #669ec0;
+}
+
+.button-blue:active {
+  background-color: #5496bd;
+}
+
 .main-navigation {
   background-color: #ffffff;
 }
@@ -49,8 +89,109 @@ a {
 
 .main-intro-logo {
   background-color: #55aaff;
-  background-image: url("../img/bg-logo.jpg");
-  background-position: 0 0;
-  background-size: contain; /* Размеры будут дальше */
+  background-image: url("../img/bg-logo.jpg"); /* TODO: добавить оставшиеся части */
+  background-position: center 0;
+  background-size: contain; /* TODO: Размеры будут дальше */
   background-repeat: no-repeat;
+}
+
+.main-intro-slogan {
+  font-size: 21px;
+  font-weight: bold;
+  line-height: 26px;
+  text-align: center;
+}
+
+.main-intro-features {
+  color: #333333;
+  text-align: center;
+}
+
+.features {
+  background-color: #eeeeee;
+}
+
+.features h3 {
+  font-size: 21px;
+  font-weight: bold;
+  line-height: 21px;;
+}
+
+.features-item-picture {
+  color: #ffffff;
+  text-align: center;
+
+  background-color: #81b3d2;
+}
+
+.features-items-list {
+  text-align: center;
+  list-style: none;
+}
+
+.features-items-list p {
+  color: #333333;
+}
+
+.features-items-list-icons {
+  background-color: #ffffff;
+}
+
+.booking {
+  text-align: center;
+  background-color: #ffffff;
+}
+
+.booking h2 {
+  font-size: 30px;
+  line-height: 36px;
+  font-weight: bold;
+}
+
+.booking p {
+  color: #333333;
+}
+
+.booking-popover {
+  background-color: #ffffff;
+  box-shadow: 0 7px 15px 0 rgba(0, 1, 1, 0.15);
+}
+
+.booking-form {
+  font-weight: bold;
+}
+
+.booking-form input {
+  font: inherit;
+
+  background-color: #f2f2f2;
+  border: none;
+}
+
+.booking-form input:hover{
+  background-color: #ebebeb;
+}
+
+.booking-form input:focus {
+  background-color: #ffffff;
+  border: 2px solid #e5e5e5;
+}
+
+.main-footer {
+  background-color: #ffffff;
+}
+
+.footer-contacts {
+  font-size: 21px;
+  line-height: 26px;
+  font-weight: bold;
+  text-align: center;
+}
+
+.footer-social {
+  list-style: none;
+}
+
+.footer-copyright {
+  text-align: center;
 }
