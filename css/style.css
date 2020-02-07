@@ -17,6 +17,7 @@ a {
 
 .button {
   font: inherit;
+  font-weight: bold;
   color: #ffffff;
   text-align: center;
   vertical-align: middle;
@@ -64,6 +65,7 @@ a {
 }
 
 .site-navigation a {
+  font-weight: bold;
   color: #000000;
 }
 
@@ -175,6 +177,68 @@ a {
 .booking-form input:focus {
   background-color: #ffffff;
   border: 2px solid #e5e5e5;
+}
+
+.hotels {
+  background-color: #ffffff;
+}
+
+.list-controls {
+  font-size: 12px;
+  line-height: 18px;
+}
+
+.list-controls h3 {
+  font-size: 21px;
+}
+
+.list-sort-by {
+  list-style: none;
+}
+
+.list-sort-by a {
+  color: rgba(0, 0, 0, 0.3);
+  border-bottom: 1px dotted #81b3d2;
+}
+
+.list-sort-by a:hover,
+.list-sort-by a:focus {
+  color: #81b3d2;
+}
+
+.list-sort-by a:active {
+  color: #000000;
+  border-bottom: none;
+}
+
+.list-sort-by .sort-active {
+  color: #81b3d2;
+  border-bottom: none;
+}
+
+.list-sort-type a {
+  color: #cacaca;
+}
+
+.list-sort-type a:hover,
+.list-sort-type a:focus {
+  color: #000000;
+}
+
+.list-sort-type a:active {
+  color: #81b3d2;
+}
+
+.list-sort-type .sort-active {
+  color: #81b3d2;
+}
+
+.hotels-list {
+  list-style: none;
+}
+
+.hotels-list h3 {
+
 }
 
 .main-footer {

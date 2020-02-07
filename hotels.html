@@ -23,13 +23,13 @@
       </nav>
     </header>
 
-    <main>
+    <main class="main-container">
       <h1 class="visually-hidden">Поиск гостиниц в Седоне</h1>
 
-      <section>
+      <section class="hotels-filter">
         <h2 class="visually-hidden">Фильтр по гостиницам</h2>
 
-        <form action="https://echo.htmlacademy.ru" method="get">
+        <form class="filters-form" action="https://echo.htmlacademy.ru" method="get">
           <fieldset>
             <legend>Инфраструктура:</legend>
 
@@ -90,39 +90,40 @@
         </form>
       </section>
 
-      <section>
+      <section class="hotels">
         <h2 class="visually-hidden">Список отелей</h2>
 
-        <div>
+        <div class="list-controls">
           <h3>Найдено: 3</h3>
           <p>Сортировка:</p>
-          <ul>
-            <li><a href="#">По цене</a></li>
+          <ul class="list-sort-by">
+            <li><a class="sort-active" href="#">По цене</a></li>
             <li><a href="#">По типу</a></li>
             <li><a href="#">По рейтингу</a></li>
           </ul>
 
-          <div>
+          <div class="list-sort-type">
             <!-- Будут иконками стрелочек вверх / вниз, а текст скрою доступно -->
+            <!-- Пока стили по наведению сделал для текста, до момента, пока не сделаю иконками  -->
             <a href="#"><span class="visually-hidden">По возрастанию</span></a>
-            <a href="#"><span class="visually-hidden">По убыванию</span></a>
+            <a class="sort-active" href="#"><span class="visually-hidden">По убыванию</span></a>
           </div>
         </div>
 
-        <ul>
+        <ul class="hotels-list">
           <li>
-            <article>
+            <article class="hotel-item">
               <div>
                 <h3>Amara Resort & Spa</h3>
                 <img src="img/hotel-picture-1.jpg" width="135" height="90" alt="Вид спереди гостиницы Amara Resort & Spa">
                 <div>
                   <span>Гостиница</span>
-                  <a href="#">Подробнее</a>
+                  <a class="button button-blue" href="#">Подробнее</a>
                 </div>
 
                 <div>
                   <span>От 4000 Р.</span>
-                  <a href="#">Забронировать</a>
+                  <a class="button" href="#">Забронировать</a>
                 </div>
               </div>
 
@@ -134,7 +135,7 @@
                   <img src="img/star.svg" width="18" height="17" alt="Звезда">
                 </div>
 
-                <div>
+                <div class="hotel-rating">
                   <span>Рейтинг: 8,5</span>
                 </div>
               </div>
@@ -142,18 +143,18 @@
           </li>
 
           <li>
-            <article>
+            <article class="hotel-item">
               <div>
                 <h3>Desert Quail Inn</h3>
                 <img src="img/hotel-picture-2.jpg" width="135" height="90" alt="Вид на мотель Desert Quail Inn">
                 <div>
                   <span>Мотель</span>
-                  <a href="#">Подробнее</a>
+                  <a class="button button-blue" href="#">Подробнее</a>
                 </div>
 
                 <div>
                   <span>От 3000 Р.</span>
-                  <a href="#">Забронировать</a>
+                  <a class="button" href="#">Забронировать</a>
                 </div>
               </div>
 
@@ -164,7 +165,7 @@
                   <img src="img/star.svg" width="18" height="17" alt="Звезда">
                 </div>
 
-                <div>
+                <div class="hotel-rating">
                   <span>Рейтинг: 8,9</span>
                 </div>
               </div>
@@ -172,18 +173,18 @@
           </li>
 
           <li>
-            <article>
+            <article class="hotel-item">
               <div>
                 <h3>Villas at Poco Diablo</h3>
                 <img src="img/hotel-picture-3.jpg" width="135" height="90" alt="Вилла в деревьях апартаментов Villas at Poco Diablo">
                 <div>
                   <span>Апартаменты</span>
-                  <a href="#">Подробнее</a>
+                  <a class="button button-blue" href="#">Подробнее</a>
                 </div>
 
                 <div>
                   <span>От 2000 Р.</span>
-                  <a href="#">Забронировать</a>
+                  <a class="button" href="#">Забронировать</a>
                 </div>
               </div>
 
@@ -193,7 +194,7 @@
                   <img src="img/star.svg" width="18" height="17" alt="Звезда">
                 </div>
 
-                <div>
+                <div class="hotel-rating">
                   <span>Рейтинг: 9,2</span>
                 </div>
               </div>
@@ -203,14 +204,17 @@
       </section>
     </main>
 
-    <footer>
-      <p>#visitsedona</p>
-      <ul>
-        <li><a href="#">Твиттер</a></li>
-        <li><a href="#">Фейсбук</a></li>
-        <li><a href="#">Ютуб</a></li>
+    <footer class="main-footer">
+      <p class="footer-contacts">
+        #visitsedona<br>
+        Тел: +7(495) 666-02-66
+      </p>
+      <ul class="footer-social">
+        <li><a class="button button-blue" href="#">Твиттер</a></li>
+        <li><a class="button button-blue" href="#">Фейсбук</a></li>
+        <li><a class="button button-blue" href="#">Ютуб</a></li>
       </ul>
-      <p>
+      <p class="footer-copyright">
         Website by
         <a href="https://htmlacademy.ru/intensive/htmlcss">
           <img src="img/logo-htmla.svg" width="115" height="41" alt="Логотип HTML Academy">
