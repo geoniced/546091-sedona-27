@@ -238,7 +238,31 @@ a {
 }
 
 .hotels-list h3 {
+  font-size: 21px;
+  line-height: 26px;
+}
 
+.hotel-item-link {
+  color: #000000;
+}
+
+.hotel-item-link:hover,
+.hotel-item-link:focus {
+  color: #81b3d2;
+}
+
+.hotel-item-link:active {
+  color: rgba(0, 0, 0, 0.3);
+}
+
+.hotel-description {
+  color: #333333;
+}
+
+.hotel-rating span {
+  color: #666666;
+
+  background-color: #f2f2f2;
 }
 
 .main-footer {
