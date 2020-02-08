@@ -179,6 +179,44 @@ a {
   border: 2px solid #e5e5e5;
 }
 
+.hotels-filter {
+  color: #ffffff;
+
+  background-color: #006e81;
+  background-image: url("../img/filter-background.jpg");
+  background-position: center center;
+  background-repeat: repeat;
+}
+
+.filters-form fieldset {
+  border: none;
+}
+
+.filters-form legend {
+  font-size: 16px;
+  line-height: 21px;
+  font-weight: bold;
+}
+
+.filters-form ul {
+  list-style: none;
+}
+
+.filter-button {
+  font-weight: normal;
+
+  background-color: transparent;
+  border: 2px solid #ffffff;
+  border-radius: 2px;
+}
+
+.filter-button:hover,
+.filter-button:focus,
+.filter-button:active {
+  color: #000000;
+
+  background-color: #ffffff;
+}
 .hotels {
   background-color: #ffffff;
 }
