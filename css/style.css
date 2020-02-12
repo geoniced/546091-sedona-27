@@ -279,12 +279,44 @@ a {
 }
 
 .hotels-list {
+  margin: 0;
+  padding: 0;
   list-style: none;
+}
+
+.hotels-list li {
+  border-top: 1px solid #e6e6e6;
+}
+
+.hotels-list li:last-child {
+  border-bottom: 1px solid #e6e6e6;
 }
 
 .hotels-list h3 {
   font-size: 21px;
   line-height: 26px;
+}
+
+.hotel-item {
+  display: flex;
+  justify-content: space-between;
+  margin: 0;
+  padding: 30px 72px;
+}
+
+.hotel-details {
+  display: flex;
+  justify-content: space-between;
+  width: 423px;
+}
+
+.hotel-column {
+  order: 1;
+  width: 258px;
+}
+
+.hotel-column h3 {
+  margin: 0;
 }
 
 .hotel-item-link {
