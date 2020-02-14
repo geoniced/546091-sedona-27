@@ -7,7 +7,7 @@
     <link href="css/normalize.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
   </head>
-  <body>
+  <body class="body-wrapper">
 
     <header class="main-header">
       <nav class="main-navigation">
@@ -135,11 +135,11 @@
         <form class="booking-form" action="https://echo.htmlacademy.ru" method="get">
           <p>
             <label for="booking-check-in">Дата заезда:</label>
-            <input type="date" name="booking-check-in" id="booking-check-in" value="2017-04-24">
+            <input type="text" name="booking-check-in" id="booking-check-in" placeholder="24 апреля 2017" value="">
           </p>
           <p>
             <label for="booking-check-out">Дата выезда:</label>
-            <input type="date" name="booking-check-out" id="booking-check-out" value="2017-07-04">
+            <input type="text" name="booking-check-out" id="booking-check-out" placeholder="4 июля 2017" value="">
           </p>
           <p>
             <label for="booking-adults">Взрослые:</label>
@@ -166,9 +166,15 @@
         Тел: +7(495) 666-02-66
       </p>
       <ul class="footer-social">
-        <li><a class="button button-blue" href="#">Твиттер</a></li>
-        <li><a class="button button-blue" href="#">Фейсбук</a></li>
-        <li><a class="button button-blue" href="#">Ютуб</a></li>
+        <li>
+          <a class="button button-blue" href="#"><span class="visually-hidden">Твиттер</span></a>
+        </li>
+        <li>
+          <a class="button button-blue" href="#"><span class="visually-hidden">Фейсбук</span></a>
+        </li>
+        <li>
+          <a class="button button-blue" href="#"><span class="visually-hidden">Ютуб</span></a>
+        </li>
       </ul>
       <p class="footer-copyright">
         Website by
