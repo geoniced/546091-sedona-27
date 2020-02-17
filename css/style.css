@@ -1,15 +1,40 @@
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
 html {
   background-color: #f2f2f2;
 }
 
 body {
-
-
   font-family: "PT Sans", Arial, sans-serif;
   font-size: 14px;
   line-height: 26px;
   color: #000000;
   text-transform: uppercase;
+}
+
+.visually-hidden:not(:focus):not(:active),
+input[type="checkbox"].visually-hidden,
+input[type="radio"].visually-hidden {
+  position: absolute;
+
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+
+  white-space: nowrap;
+
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
 }
 
 .body-wrapper {
@@ -70,16 +95,39 @@ a {
 }
 
 .main-navigation {
+  position: relative;
+
   background-color: #ffffff;
 }
 
+.main-header-logo {
+  position: absolute;
+  top: 0;
+  left: 529px;
+}
+
 .site-navigation {
+  display: flex;
+  margin: 0;
+  padding: 0;
+
   list-style: none;
 }
 
 .site-navigation a {
+  display: block;
+  width: 239px;
+  min-height: 56px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+
   font-weight: bold;
+  text-align: center;
   color: #000000;
+}
+
+.site-navigation li:nth-child(2) {
+  margin-right: auto;
 }
 
 .site-navigation a:hover,
@@ -98,19 +146,40 @@ a {
   color: #766357;
 }
 
+.main-container {
+  margin: 0;
+  padding: 0;
+}
+
 .main-intro {
+  display: flex;
+  flex-direction: column;
+  align-items: center;;
   background-color: #ffffff;
 }
 
 .main-intro-logo {
+  width: 100%;
+  height: 510px;
+  margin-bottom: 60px;
+
   background-color: #55aaff;
-  background-image: url("../img/bg-logo.jpg"); /* TODO: добавить оставшиеся части */
-  background-position: center 0;
-  background-size: contain; /* TODO: Размеры будут дальше */
+  background-image:
+    url("../img/polygon.png"),
+    url("../img/welcome.svg"),
+    url("../img/bg-logo.jpg")
+    ; /* TODO: добавить оставшиеся части */
+  background-position: center 452px, center center, center -83px;
+  background-size: auto, 459px 353px, auto; /* TODO: Размеры будут дальше */
   background-repeat: no-repeat;
 }
 
 .main-intro-slogan {
+  width: 440px;
+  padding: 0;
+  margin: 0;
+
+
   font-size: 21px;
   font-weight: bold;
   line-height: 26px;
