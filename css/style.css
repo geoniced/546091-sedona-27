@@ -103,7 +103,7 @@ a {
 .main-header-logo {
   position: absolute;
   top: 0;
-  left: 529px;
+  left: 530px;
 }
 
 .site-navigation {
@@ -118,7 +118,7 @@ a {
   display: block;
   width: 239px;
   min-height: 56px;
-  padding-top: 15px;
+  padding-top: 14px;
   padding-bottom: 15px;
 
   font-weight: bold;
@@ -160,16 +160,18 @@ a {
 
 .main-intro-logo {
   width: 100%;
-  height: 510px;
+  height: 507px;
   margin-bottom: 60px;
 
   background-color: #55aaff;
   background-image:
     url("../img/polygon.png"),
     url("../img/welcome.svg"),
-    url("../img/bg-logo.jpg")
-    ; /* TODO: добавить оставшиеся части */
-  background-position: center 452px, center center, center -83px;
+    url("../img/bg-logo.jpg"); /* TODO: добавить оставшиеся части */
+  background-position:
+    center 450px,
+    center center,
+    center -83px;
   background-size: auto, 459px 353px, auto; /* TODO: Размеры будут дальше */
   background-repeat: no-repeat;
 }
@@ -178,7 +180,7 @@ a {
   width: 440px;
   padding: 0;
   margin: 0;
-
+  margin-bottom: 29px;
 
   font-size: 21px;
   font-weight: bold;
@@ -187,6 +189,10 @@ a {
 }
 
 .main-intro-features {
+  padding: 0;
+  margin: 0;
+  margin-bottom: 52px;
+
   color: #333333;
   text-align: center;
 }
@@ -196,29 +202,111 @@ a {
 }
 
 .features h3 {
+  width: 215px;
+  margin: 0;
+
   font-size: 21px;
   font-weight: bold;
   line-height: 21px;;
 }
 
+.features p {
+  margin: 0;
+  padding: 0;
+}
+
 .features-item-picture {
+  display: flex;
+  height: 256px;
+
   color: #ffffff;
   text-align: center;
 
   background-color: #81b3d2;
 }
 
+.features-item-picture-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  padding-top: 46px;
+  padding-left: 60px;
+  padding-right: 60px;
+  padding-bottom: 64px;
+}
+
+.features-item-picture-info h3 {
+  margin-bottom: 25px;
+}
+
+.features-item-picture-info p {
+  margin-bottom: 20px;
+
+  line-height: 21px;
+}
+
+.features-item-picture-info p:last-child {
+  margin-bottom: 0;
+}
+
+.features-item-picture-info img {
+  width: 800px;
+  height: 256px;
+}
+
 .features-items-list {
+  display: flex;
+
+  margin: 0;
+  padding: 0;
+
   text-align: center;
   list-style: none;
 }
 
+.features-items-list li {
+  display: flex;
+  height: 330px;
+  flex-direction: column;
+  align-items: center;
+}
+
 .features-items-list p {
+  line-height: 21px;
   color: #333333;
 }
 
 .features-items-list-icons {
   background-color: #ffffff;
+}
+
+.features-items-list-icons .features-icons-heading {
+  position: relative;
+
+  padding-top: 160px;
+  margin-bottom: 30px;
+}
+
+.features-icons-heading::before {
+  content: "";
+
+  position: absolute;
+  top: 60px;
+  left: 50%;
+
+  width: 75px;
+  height: 72px;
+
+  margin-left: -37px;
+
+  background-position: 0 0;
+  background-repeat: no-repeat;
+
+}
+
+.features-living::before {
+  background-image: url("../img/icon-1.svg");;
 }
 
 .booking {
