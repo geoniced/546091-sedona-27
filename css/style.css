@@ -350,12 +350,18 @@ a {
 
 .main-footer {
   display: flex;
+  justify-content: space-between;
+  padding-top: 36px;
+  padding-right: 101px;
+  padding-left: 132px;
+  padding-bottom: 36px;
+
   background-color: #ffffff;
 }
 
 .footer-contacts {
-  margin-left: 132px;
-  margin-right: 169px;
+  margin: 0;
+  padding: 0;
 
   font-size: 21px;
   line-height: 26px;
@@ -364,11 +370,13 @@ a {
 }
 
 .footer-social {
+  margin: 0;
+  padding: 0;
   list-style: none;
 }
 
 .footer-copyright {
-  margin-left: auto;
-  margin-right: 101px;
+  margin: 0;
+  padding: 0;
   text-align: center;
 }
