@@ -202,7 +202,7 @@ a {
 }
 
 .features h3 {
-  width: 215px;
+  width: 175px;
   margin: 0;
 
   font-size: 21px;
@@ -225,14 +225,18 @@ a {
   background-color: #81b3d2;
 }
 
+.features-item-picture-reversed .features-item-picture-info {
+  order: 1;
+}
+
 .features-item-picture-info {
   display: flex;
   flex-direction: column;
   align-items: center;
 
   padding-top: 46px;
-  padding-left: 60px;
-  padding-right: 60px;
+  padding-left: 50px; /* was 60 l/r */
+  padding-right: 49px;
   padding-bottom: 64px;
 }
 
@@ -257,6 +261,7 @@ a {
 
 .features-items-list {
   display: flex;
+  justify-content: space-around;
 
   margin: 0;
   padding: 0;
@@ -265,27 +270,43 @@ a {
   list-style: none;
 }
 
+.features-items-list h3 {
+  padding-top: 50px;
+  margin-bottom: 25px;
+}
+
 .features-items-list li {
   display: flex;
-  height: 330px;
   flex-direction: column;
   align-items: center;
 }
 
 .features-items-list p {
+  width: 285px;
   line-height: 21px;
   color: #333333;
+}
+
+.features-item p:first-of-type {
+  margin-bottom: 18px;
+}
+
+.features-item p:last-of-type {
+  margin-bottom: 60px;
 }
 
 .features-items-list-icons {
   background-color: #ffffff;
 }
 
+.features-items-list-icons p {
+  margin-bottom: 81px;
+}
+
 .features-items-list-icons .features-icons-heading {
   position: relative;
 
   padding-top: 160px;
-  margin-bottom: 30px;
 }
 
 .features-icons-heading::before {
@@ -302,11 +323,23 @@ a {
 
   background-position: 0 0;
   background-repeat: no-repeat;
-
 }
 
 .features-living::before {
-  background-image: url("../img/icon-1.svg");;
+  background-image: url("../img/icon-1.svg");
+}
+
+.features-food::before {
+  background-image: url("../img/icon-2.svg");
+}
+
+.features-souvenirs::before {
+  top: 56px;
+
+  height: 76px;
+  margin-left: -32px;
+
+  background-image: url("../img/icon-3.svg");
 }
 
 .booking {
