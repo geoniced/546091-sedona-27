@@ -389,7 +389,6 @@ a {
   display: flex;
   flex-direction: column;
 
-
   font-weight: bold;
 }
 
@@ -419,6 +418,10 @@ a {
   border: none;
 }
 
+.booking-form label {
+  display: block;
+}
+
 .booking-form input:hover{
   background-color: #ebebeb;
 }
@@ -426,6 +429,36 @@ a {
 .booking-form input:focus {
   background-color: #ffffff;
   border: 2px solid #e5e5e5;
+}
+
+.booking-column {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.booking-column p {
+  width: 50%;
+  margin: 0;
+  padding-left: 50px;
+}
+
+.booking-column p:first-child {
+  padding-left: 0;
+}
+
+.booking-form .button {
+  margin-top: 53px;
+  padding-top: 15px;
+  padding-bottom: 18px;
+}
+
+.booking-column input{
+  width: 114px;
+}
+
+.site-map img {
+  display: block;
 }
 
 .hotels-filter {
@@ -585,9 +618,9 @@ a {
 .main-footer {
   display: flex;
   justify-content: space-between;
-  padding-top: 36px;
+  padding-top: 30px;
   padding-right: 101px;
-  padding-left: 132px;
+  padding-left: 124px;
   padding-bottom: 36px;
 
   background-color: #ffffff;
@@ -598,19 +631,58 @@ a {
   padding: 0;
 
   font-size: 21px;
-  line-height: 26px;
+  line-height: 30px;
   font-weight: bold;
   text-align: left;
 }
 
 .footer-social {
+  display: flex;
+  align-items: center;
+
   margin: 0;
   padding: 0;
+
   list-style: none;
 }
 
+.footer-social li {
+  margin-right: 6px;
+}
+
+.footer-social li:last-child {
+  margin-right: 0;
+}
+
+.footer-social .button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 46px;
+  height: 48px;
+}
+
 .footer-copyright {
+  display: flex;
+  align-items: center;
   margin: 0;
   padding: 0;
   text-align: center;
+}
+
+.footer-copyright span {
+  margin-right: 7px;
+}
+
+.footer-copyright path {
+  fill: #000000;
+}
+
+.footer-copyright-logo:hover path,
+.footer-copyright-logo:focus path {
+  fill: #81b3d2
+}
+
+.footer-copyright-logo:active path {
+  fill: #bdbbbc;
 }
