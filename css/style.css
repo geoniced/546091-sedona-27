@@ -664,17 +664,21 @@ a {
   margin-right: 0;
 }
 
-.list-sort-type a:hover,
-.list-sort-type a:focus {
-  color: #000000;
+.sort-type path {
+  fill: #cacaca;
 }
 
-.list-sort-type a:active {
-  color: #81b3d2;
+.sort-active path {
+  fill: #81b3d2;
 }
 
-.list-sort-type .sort-active {
-  color: #81b3d2;
+.sort-type:hover path,
+.sort-type:focus path {
+  fill: #000000;
+}
+
+.sort-type:active path {
+  fill: #81b3d2;
 }
 
 .hotels-list {
