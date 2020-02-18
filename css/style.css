@@ -470,21 +470,103 @@ a {
   background-repeat: repeat;
 }
 
-.filters-form fieldset {
+.filters-form {
+  position: relative;
+
+  display: flex;
+  margin: 0;
+  padding-top: 27px;
+  padding-bottom: 31px;
+  padding-left: 72px;
+  padding-right: 74px;
+
+}
+
+.filters-column {
+  margin: 0;
+  margin-right: 118px;
+  padding: 0;
+
   border: none;
 }
 
+.filter-type {
+  margin-right: auto;
+}
+
+.filter-cost {
+  margin-right: 0;
+}
+
 .filters-form legend {
+  margin: 0;
+  margin-bottom: 22px;
+
   font-size: 16px;
   line-height: 21px;
   font-weight: bold;
 }
 
-.filters-form ul {
+.filter-cost legend {
+  margin-bottom: 13px;
+}
+
+.filter-list {
+  margin: 0;
+  padding: 0;
+
   list-style: none;
 }
 
+.filter-option {
+  margin-bottom: 20px;
+  padding-left: 40px;
+}
+
+.filter-option label {
+  position: relative;
+}
+
+.filter-input-checkbox + label::before {
+  content: "";
+
+  position: absolute;
+  top: -2px;
+  left: -40px;
+
+  width: 23px;
+  height: 23px;
+
+  background-image: url("../img/checkbox-off.svg");
+  background-position: 0 0;
+  background-repeat: no-repeat;
+}
+
+.filter-input-checkbox:checked + label::after {
+  content: "";
+
+  position: absolute;
+  top: -2px;
+  left: -40px;
+
+  width: 27px;
+  height: 23px;
+
+  background-image: url("../img/checkbox-on.svg");
+  background-position: 0 0;
+  background-repeat: no-repeat;
+}
+
+.filter-input-checkbox:disabled + label::before,
+.filter-input-checkbox:disabled + label::after {
+  opacity: 0.3;
+}
+
 .filter-button {
+  position: absolute;
+  bottom: 50px;
+  right: 100px;
+
   font-weight: normal;
 
   background-color: transparent;
