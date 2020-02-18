@@ -69,24 +69,31 @@
           </fieldset>
 
           <fieldset class="filters-column filter-cost">
-            <legend>Стоимость в сутки (Р):</legend>
+            <legend class="filter-cost-title">Стоимость в сутки (Р):</legend>
 
-            <div class="range-slider">
-              <p>
-                <label for="cost-min">От</label>
-                <input type="number" name="cost-min" id="cost-min" min="0" value="0">
+            <p class="cost-controls">
+              <label class="cost-min">От <input type="number" name="cost-min" min="0" value="0"></label>
 
-                <label for="cost-max">До</label>
-                <input type="number" name="cost-max" id="cost-max" value="3000">
-              </p>
+              <label class="cost-max">До <input type="number" name="cost-max" value="3000"></label>
+            </p>
+            <!--
+              <label class="cost-min" for="cost-min">От</label>
+              <input type="number" name="cost-min" id="cost-min" min="0" value="0">
+              <label class="cost-max" for="cost-max">До</label>
+              <input type="number" name="cost-max" id="cost-max" value="3000">
 
-              <div class="range-slider-track">
-                <div class="range-slider-pin range-slider-pin-min"></div>
-                <div class="range-slider-pin range-slider-pin-max"></div>
+              <div class="range-slider-pin range-slider-pin-min"></div>
+              <div class="range-slider-pin range-slider-pin-max"></div>
+            -->
+            <div class="range-controls">
+              <div class="scale">
+                <div class="bar"></div>
               </div>
+              <div class="range-toggle range-toggle-min"></div>
+              <div class="range-toggle range-toggle-max"></div>
             </div>
+            <button class="button filter-button" type="submit">Показать</button>
           </fieldset>
-          <button class="button filter-button" type="submit">Показать</button>
         </form>
       </section>
 

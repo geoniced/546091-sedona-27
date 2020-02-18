@@ -471,15 +471,12 @@ a {
 }
 
 .filters-form {
-  position: relative;
-
   display: flex;
   margin: 0;
   padding-top: 27px;
   padding-bottom: 29px;
   padding-left: 72px;
   padding-right: 74px;
-
 }
 
 .filters-column {
@@ -495,6 +492,7 @@ a {
 }
 
 .filter-cost {
+  width: 330px;
   margin-right: 0;
 }
 
@@ -507,8 +505,87 @@ a {
   font-weight: bold;
 }
 
-.filter-cost legend {
-  margin-bottom: 13px;
+.filter-cost .filter-cost-title  {
+  margin-bottom: 9px;
+}
+
+.cost-controls {
+  position: relative;
+
+  height: 40px;
+  margin-bottom: 20px;
+
+  font-size: 0;
+
+  border: 2px solid #ffffff;
+  border-radius: 2px;
+}
+
+.cost-controls::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+
+  width: 2px;
+  height: 22px;
+
+  background-color: #ffffff;
+  transform: translate(-50%, -50%);
+}
+
+.cost-controls label {
+  display: inline-block;
+
+  font-size: 14px;
+  line-height: 38px;
+  vertical-align: top;
+
+  cursor: pointer;
+}
+
+.cost-controls .cost-min,
+.cost-controls .cost-max {
+  width: 155px;
+  padding-left: 65px;
+}
+
+.cost-controls input {
+  width: 50px;
+  margin: 0;
+
+  color: inherit;
+  font: inherit;
+
+  background: none;
+  border: none;
+}
+
+.range-controls {
+  position: relative;
+
+  margin-bottom: 32px;
+}
+
+.range-controls .scale {
+  height: 2px;
+
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
+.range-controls .bar {
+  width: 80%;
+  height: 2px;
+
+  background-color: #ffffff;
+}
+
+.range-toggle {
+  width: 4px;
+  height: 4px;
+
+  background: #ababab;
+  border: 8px solid #ffffff;
 }
 
 .filter-list {
@@ -567,10 +644,6 @@ a {
 }
 
 .filter-button {
-  position: absolute;
-  bottom: 50px;
-  right: 100px;
-
   font-weight: normal;
 
   background-color: transparent;
