@@ -505,89 +505,6 @@ a {
   font-weight: bold;
 }
 
-.filter-cost .filter-cost-title  {
-  margin-bottom: 9px;
-}
-
-.cost-controls {
-  position: relative;
-
-  height: 40px;
-  margin-bottom: 20px;
-
-  font-size: 0;
-
-  border: 2px solid #ffffff;
-  border-radius: 2px;
-}
-
-.cost-controls::after {
-  content: "";
-  position: absolute;
-  top: 50%;
-  left: 50%;
-
-  width: 2px;
-  height: 22px;
-
-  background-color: #ffffff;
-  transform: translate(-50%, -50%);
-}
-
-.cost-controls label {
-  display: inline-block;
-
-  font-size: 14px;
-  line-height: 38px;
-  vertical-align: top;
-
-  cursor: pointer;
-}
-
-.cost-controls .cost-min,
-.cost-controls .cost-max {
-  width: 155px;
-  padding-left: 65px;
-}
-
-.cost-controls input {
-  width: 50px;
-  margin: 0;
-
-  color: inherit;
-  font: inherit;
-
-  background: none;
-  border: none;
-}
-
-.range-controls {
-  position: relative;
-
-  margin-bottom: 32px;
-}
-
-.range-controls .scale {
-  height: 2px;
-
-  background-color: rgba(0, 0, 0, 0.3);
-}
-
-.range-controls .bar {
-  width: 80%;
-  height: 2px;
-
-  background-color: #ffffff;
-}
-
-.range-toggle {
-  width: 4px;
-  height: 4px;
-
-  background: #ababab;
-  border: 8px solid #ffffff;
-}
-
 .filter-list {
   margin: 0;
   padding: 0;
@@ -643,8 +560,114 @@ a {
   opacity: 0.3;
 }
 
+.filter-cost .filter-cost-title {
+  margin-bottom: 9px;
+}
+
+.cost-controls {
+  position: relative;
+
+  height: 40px;
+  margin-bottom: 20px;
+
+  font-size: 0;
+
+  border: 2px solid #ffffff;
+  border-radius: 2px;
+}
+
+.cost-controls::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+
+  width: 2px;
+  height: 22px;
+
+  background-color: #ffffff;
+  transform: translate(-50%, -50%);
+}
+
+.cost-controls label {
+  display: inline-block;
+
+  font-size: 14px;
+  line-height: 34px;
+  vertical-align: top;
+
+  cursor: pointer;
+}
+
+.cost-controls .cost-min,
+.cost-controls .cost-max {
+  width: 155px;
+  padding-left: 65px;
+}
+
+.cost-controls input {
+  width: 50px;
+  margin: 0;
+
+  color: inherit;
+  font: inherit;
+
+  background: none;
+  border: none;
+}
+
+.range-controls {
+  position: relative;
+
+  margin-bottom: 32px;
+}
+
+.range-controls .scale {
+  height: 2px;
+
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
+.range-controls .bar {
+  width: 80%;
+  height: 2px;
+
+  background-color: #ffffff;
+}
+
+.range-toggle {
+  position: absolute;
+  top: -9px;
+
+  width: 20px;
+  height: 20px;
+
+  background: #ababab;
+  border: 8px solid #ffffff;
+  border-radius: 50%;
+  box-shadow: 0 2px 1px 0 rgba(0, 1, 1, 0.2);
+  cursor: pointer;
+}
+
+.range-toggle-min {
+  left: 0;
+}
+
+.range-toggle-max {
+  left: 80%;
+}
+
+.range-toggle:hover {
+  background-color: #1c4f80;
+}
+
 .filter-button {
+  display: block;
+  margin: 0 auto;
+  padding: 6px 35px;
+
   font-weight: normal;
+  line-height: 20px;
 
   background-color: transparent;
   border: 2px solid #ffffff;
@@ -658,6 +681,7 @@ a {
 
   background-color: #ffffff;
 }
+
 .hotels {
   background-color: #ffffff;
 }
@@ -914,6 +938,7 @@ a {
   justify-content: center;
   width: 46px;
   height: 48px;
+  padding: 0;
 }
 
 .footer-copyright {
