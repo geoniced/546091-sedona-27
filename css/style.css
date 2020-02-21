@@ -172,12 +172,12 @@ a {
   background-image:
     url("../img/polygon.png"),
     url("../img/welcome.svg"),
-    url("../img/bg-logo.jpg"); /* TODO: добавить оставшиеся части */
+    url("../img/bg-logo.jpg");
   background-position:
     center 450px,
     center center,
     center -83px;
-  background-size: auto, 459px 353px, auto; /* TODO: Размеры будут дальше */
+  background-size: auto, 459px 353px, auto;
   background-repeat: no-repeat;
 }
 
@@ -270,13 +270,14 @@ a {
 
   margin: 0;
   padding: 0;
+  padding-top: 161px;
+  padding-bottom: 81px;
 
   text-align: center;
   list-style: none;
 }
 
 .features-items-list h3 {
-  padding-top: 50px;
   margin-bottom: 25px;
 }
 
@@ -304,30 +305,24 @@ a {
   background-color: #ffffff;
 }
 
-.features-items-list-icons p {
-  margin-bottom: 81px;
-}
-
 .features-items-list-icons .features-icons-heading {
   position: relative;
-
-  padding-top: 160px;
 }
 
 .features-icons-heading::before {
   content: "";
 
   position: absolute;
-  top: 60px;
+  bottom: 50px;
   left: 50%;
 
   width: 75px;
   height: 72px;
 
-  margin-left: -37px;
-
   background-position: 0 0;
   background-repeat: no-repeat;
+
+  transform: translateX(-50%);
 }
 
 .features-living::before {
@@ -339,10 +334,8 @@ a {
 }
 
 .features-souvenirs::before {
-  top: 56px;
-
+  width: 64px;
   height: 76px;
-  margin-left: -32px;
 
   background-image: url("../img/icon-3.svg");
 }
@@ -467,28 +460,6 @@ input[type=number] {
   background-color: #ffffff;
   border: 2px solid #e5e5e5;
 }
-/*
-.booking-column {
-  display: flex;
-  justify-content: space-between;
-  width: 100%;
-}
-
-.booking-column p {
-  width: 50%;
-  margin: 0;
-  padding-left: 50px;
-}
-
-.booking-column p:first-child {
-  padding-left: 0;
-} */
-
-/*
-  TODO: rework
-.booking-column input{
-  width: 114px;
-} */
 
 .booking-columns-wrapper {
   display: flex;
