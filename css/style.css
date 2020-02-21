@@ -270,8 +270,8 @@ a {
 
   margin: 0;
   padding: 0;
-  padding-top: 161px;
-  padding-bottom: 81px;
+  padding-top: 50px;
+  padding-bottom: 58px;
 
   text-align: center;
   list-style: none;
@@ -298,10 +298,13 @@ a {
 }
 
 .features-item p:last-of-type {
-  margin-bottom: 60px;
+  margin-bottom: 0;
 }
 
 .features-items-list-icons {
+  padding-top: 161px;
+  padding-bottom: 81px;
+
   background-color: #ffffff;
 }
 
@@ -341,8 +344,11 @@ a {
 }
 
 .booking {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
   padding-top: 50px;
-  text-align: center;
   background-color: #ffffff;
 }
 
@@ -354,6 +360,7 @@ a {
   font-size: 30px;
   line-height: 36px;
   font-weight: bold;
+  text-align: center;
 }
 
 .booking p {
@@ -361,25 +368,26 @@ a {
   margin: 0;
   margin-bottom: 45px;
   color: #333333;
+  text-align: center;
 }
 
 .booking .button {
   width: 568px;
   padding-top: 30px;
-  padding-bottom: 33px;
+  padding-bottom: 30px;
 }
-
 
 
 .booking-popover {
   position: absolute;
+  left: 50%;
 
   width: 567px;
   padding: 55px;
-  margin-left: 317px;
 
   background-color: #ffffff;
   box-shadow: 0 7px 15px 0 rgba(0, 1, 1, 0.15);
+  transform: translateX(-50%);
 }
 
 .booking-form {
@@ -1002,14 +1010,18 @@ input[type=number] {
 }
 
 .main-footer {
+  position: relative;
+
   display: flex;
   justify-content: space-between;
   padding-top: 30px;
   padding-right: 101px;
   padding-left: 124px;
   padding-bottom: 36px;
+  margin-top: -121px;
 
   background-color: #ffffff;
+  opacity: 0.9;
 }
 
 .footer-contacts {
@@ -1059,6 +1071,10 @@ input[type=number] {
 
 .footer-copyright span {
   margin-right: 7px;
+}
+
+.footer-copyright svg {
+  display: block;
 }
 
 .footer-copyright path {
