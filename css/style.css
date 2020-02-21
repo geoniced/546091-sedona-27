@@ -159,7 +159,10 @@ a {
 .main-intro {
   display: flex;
   flex-direction: column;
-  align-items: center;;
+  align-items: center;
+
+  padding-bottom: 50px;
+
   background-color: #ffffff;
 }
 
@@ -196,7 +199,6 @@ a {
 .main-intro-features {
   padding: 0;
   margin: 0;
-  margin-bottom: 52px;
 
   color: #333333;
   text-align: center;
@@ -270,8 +272,8 @@ a {
 
   margin: 0;
   padding: 0;
-  padding-top: 50px;
-  padding-bottom: 58px;
+  padding-top: 47px;
+  padding-bottom: 59px;
 
   text-align: center;
   list-style: none;
@@ -294,7 +296,7 @@ a {
 }
 
 .features-item p:first-of-type {
-  margin-bottom: 18px;
+  margin-bottom: 20px;
 }
 
 .features-item p:last-of-type {
