@@ -434,7 +434,7 @@ a {
   width: 346px;
   padding: 0;
   padding-top: 4px;
-  padding-left: 14px;
+  padding-left: 10px;
   padding-right: 14px;
   padding-bottom: 4px;
   margin: 0;
@@ -586,7 +586,7 @@ input[type=number] {
   padding-top: 27px;
   padding-bottom: 29px;
   padding-left: 72px;
-  padding-right: 74px;
+  padding-right: 60px;
 }
 
 .filters-column {
@@ -604,6 +604,7 @@ input[type=number] {
 .filter-cost {
   width: 330px;
   margin-right: 0;
+  padding-right: 12px;
 }
 
 .filters-form legend {
@@ -680,13 +681,13 @@ input[type=number] {
 }
 
 .filter-cost .filter-cost-title {
-  margin-bottom: 9px;
+  margin-bottom: 10px;
 }
 
 .cost-controls {
   position: relative;
 
-  height: 40px;
+  height: 36px;
   margin-bottom: 20px;
 
   font-size: 0;
@@ -712,7 +713,7 @@ input[type=number] {
   display: inline-block;
 
   font-size: 14px;
-  line-height: 34px;
+  line-height: 30px;
   vertical-align: top;
 
   cursor: pointer;
@@ -722,6 +723,10 @@ input[type=number] {
 .cost-controls .cost-max {
   width: 155px;
   padding-left: 65px;
+}
+
+.cost-controls .cost-max {
+  padding-left: 56px;
 }
 
 .cost-controls input {
@@ -812,7 +817,7 @@ input[type=number] {
   padding-top: 34px;
   padding-left: 71px;
   padding-right: 73px;
-  padding-bottom: 33px;
+  padding-bottom: 31px;
 
   font-size: 12px;
   line-height: 18px;
@@ -941,8 +946,9 @@ input[type=number] {
   margin-left: 30px;
 }
 
-.hotel-column h3 {
+.hotel-title {
   margin: 0;
+  margin-top: -5px;
 }
 
 .hotel-item-link {
@@ -967,7 +973,7 @@ input[type=number] {
   display: flex;
   flex-direction: column;
 
-  margin-right: 6px;
+  margin-right: 7px;
 }
 
 .hotel-description-column:last-child {
@@ -1025,10 +1031,13 @@ input[type=number] {
   padding-right: 101px;
   padding-left: 124px;
   padding-bottom: 36px;
-  margin-top: -121px;
 
   background-color: #ffffff;
   opacity: 0.9;
+}
+
+.main-footer-shifted {
+  margin-top: -121px;
 }
 
 .footer-contacts {
