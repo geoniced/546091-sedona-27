@@ -106,7 +106,9 @@ a {
 .main-header-logo {
   position: absolute;
   top: 0;
-  left: 530px;
+  left: 50%;
+
+  transform: translateX(-50%);
 }
 
 .site-navigation {
@@ -374,6 +376,8 @@ a {
   padding-bottom: 33px;
 }
 
+
+
 .booking-popover {
   position: absolute;
 
@@ -392,7 +396,9 @@ a {
   font-weight: bold;
 }
 
-.booking-form p {
+.booking-field {
+  position: relative;
+
   display: flex;
   justify-content: space-between;
   align-items: center;;
@@ -402,12 +408,32 @@ a {
   margin-bottom: 30px;
 }
 
+.booking-calendar {
+  position: absolute;
+  top: 9px;
+  right: 9px;
+}
+
+.booking-calendar path {
+  fill: #cacaca;
+}
+
+.booking-calendar:hover path,
+.booking-calendar:focus path {
+  fill: #000000;
+}
+
+.booking-calendar:active path {
+  fill: #81b3d2;
+}
+
 .booking-form input {
   width: 346px;
   padding: 0;
+  padding-top: 4px;
   padding-left: 14px;
-  padding-top: 6px;
-  padding-bottom: 6px;
+  padding-right: 14px;
+  padding-bottom: 4px;
   margin: 0;
 
   font: inherit;
@@ -415,11 +441,22 @@ a {
   color: #000000;
 
   background-color: #f2f2f2;
-  border: none;
+  border: 2px solid transparent;
+}
+
+input[type=number]::-webkit-outer-spin-button,
+input[type=number]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input[type=number] {
+  -moz-appearance: textfield;
 }
 
 .booking-form label {
   display: block;
+  width: 112px;
 }
 
 .booking-form input:hover{
@@ -430,7 +467,7 @@ a {
   background-color: #ffffff;
   border: 2px solid #e5e5e5;
 }
-
+/*
 .booking-column {
   display: flex;
   justify-content: space-between;
@@ -445,16 +482,103 @@ a {
 
 .booking-column p:first-child {
   padding-left: 0;
+} */
+
+/*
+  TODO: rework
+.booking-column input{
+  width: 114px;
+} */
+
+.booking-columns-wrapper {
+  display: flex;
 }
 
-.booking-form .button {
+.booking-column {
+  display: flex;
+  align-items: center;
+  width: 50%;
+}
+
+.booking-column .booking-input-number {
+  width: 38px;
+  height: 38px;
+
+  padding-left: 13px;
+  padding-right: 0;
+}
+
+.booking-number-field {
+  display: flex;
+}
+
+.booking-number-button {
+  position: relative;
+
+  display: block;
+  width: 38px;
+  height: 38px;
+  padding: 0;
+  margin: 0;
+
+  background-color: #f2f2f2;
+}
+
+.booking-number-button:hover,
+.booking-number-button:focus,
+.booking-number-button:active {
+  background-color: #f2f2f2;
+}
+
+.booking-number-button:hover::before,
+.booking-number-button:hover::after,
+.booking-number-button:focus::before,
+.booking-number-button:focus::after {
+  background-color: #000000;
+}
+
+.booking-number-button:active::before,
+.booking-number-button:active::after {
+  background-color: #81b3d2;
+}
+
+.booking-number-minus::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+
+  width: 12px;
+  height: 3px;
+
+  background-color: #aaabab;
+  transform: translateX(-50%) translateY(-50%);
+}
+
+.booking-number-plus::before,
+.booking-number-plus::after {
+  content: "";
+  position: absolute;
+
+  width: 12px;
+  height: 3px;
+
+  background-color: #aaabab;
+
+}
+
+.booking-number-plus::before {
+  transform: translateX(-50%) translateY(-50%);
+}
+
+.booking-number-plus::after {
+  transform: translateX(-50%) translateY(-50%) rotate(90deg);
+}
+
+.booking-button {
   margin-top: 53px;
   padding-top: 15px;
   padding-bottom: 18px;
-}
-
-.booking-column input{
-  width: 114px;
 }
 
 .site-map img {
@@ -514,7 +638,6 @@ a {
 
 .filter-option {
   margin-bottom: 20px;
-  padding-left: 40px;
 }
 
 .filter-option:last-child {
@@ -523,14 +646,18 @@ a {
 
 .filter-option label {
   position: relative;
+
+  display:block;
+
+  padding-left: 40px;
 }
 
 .filter-input-checkbox + label::before {
   content: "";
 
   position: absolute;
-  top: -2px;
-  left: -40px;
+  top: 2px;
+  left: 0;
 
   width: 23px;
   height: 23px;
@@ -544,8 +671,8 @@ a {
   content: "";
 
   position: absolute;
-  top: -2px;
-  left: -40px;
+  top: 2px;
+  left: 0;
 
   width: 27px;
   height: 23px;
@@ -553,6 +680,12 @@ a {
   background-image: url("../img/checkbox-on.svg");
   background-position: 0 0;
   background-repeat: no-repeat;
+}
+
+.filter-input-checkbox:focus + label {
+  outline: 2px solid #4d90fe;
+  outline-offset: 1px;
+  box-shadow: 0 0 5px #4d90fe;
 }
 
 .filter-input-checkbox:disabled + label::before,
@@ -808,6 +941,10 @@ a {
   display: flex;
 }
 
+.hotel-details img {
+  display: block;
+}
+
 .hotel-column {
   order: 1;
 
@@ -856,7 +993,7 @@ a {
 }
 
 .hotel-description-column .button {
-  margin-top: 15px;
+  margin-top: 11px;
 }
 
 .hotel-review {
