@@ -585,16 +585,21 @@ input[type=number] {
 
 .filters-form {
   display: flex;
+  flex-wrap: wrap;
+
   margin: 0;
   padding-top: 27px;
-  padding-bottom: 29px;
+  padding-bottom: 20px;
   padding-left: 72px;
   padding-right: 60px;
 }
 
 .filters-column {
+  width: 137px;
+
   margin: 0;
   margin-right: 118px;
+  margin-bottom: 9px;
   padding: 0;
 
   border: none;
@@ -815,6 +820,7 @@ input[type=number] {
 
 .list-controls {
   display: flex;
+  flex-wrap: wrap;
   align-items: baseline;
 
   padding-top: 34px;
@@ -842,6 +848,7 @@ input[type=number] {
 
 .list-sort-by {
   display: flex;
+  flex-wrap: wrap;
 
   margin: 0;
   margin-right: auto;
@@ -926,6 +933,7 @@ input[type=number] {
 
 .hotel-item {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
   margin: 0;
   padding: 30px 72px;
@@ -933,6 +941,7 @@ input[type=number] {
 
 .hotel-details {
   display: flex;
+  flex-wrap: wrap;
 }
 
 .hotel-details img {
@@ -975,6 +984,7 @@ input[type=number] {
 .hotel-description-column {
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
 
   margin-right: 7px;
 }
@@ -984,6 +994,8 @@ input[type=number] {
 }
 
 .hotel-description {
+  max-width: 150px;
+
   color: #333333;
 }
 
@@ -994,6 +1006,7 @@ input[type=number] {
 .hotel-review {
   display: flex;
   flex-direction: column;
+  align-items: flex-end;
   justify-content: space-between;
 }
 
