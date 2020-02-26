@@ -113,6 +113,8 @@ a {
 
 .site-navigation {
   display: flex;
+  flex-wrap: wrap;
+
   margin: 0;
   padding: 0;
 
@@ -121,7 +123,7 @@ a {
 
 .site-navigation a {
   display: block;
-  width: 239px;
+  width: 240px;
   min-height: 56px;
   padding-top: 14px;
   padding-bottom: 15px;
@@ -131,8 +133,8 @@ a {
   color: #000000;
 }
 
-.site-navigation li:nth-child(2) {
-  margin-right: auto;
+.site-navigation li:nth-child(4n - 2) {
+  margin-right: 240px;
 }
 
 .site-navigation a:hover,
