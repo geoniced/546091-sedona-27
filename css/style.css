@@ -207,6 +207,9 @@ a {
 }
 
 .features {
+  position: relative;
+  z-index: 1;
+
   background-color: #eeeeee;
 }
 
@@ -348,6 +351,9 @@ a {
 }
 
 .booking {
+  position: relative;
+  z-index: 1;
+
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -384,6 +390,7 @@ a {
 
 .booking-popover {
   position: absolute;
+  z-index: 0;
   left: 50%;
 
   width: 567px;
@@ -392,6 +399,10 @@ a {
   background-color: #ffffff;
   box-shadow: 0 7px 15px 0 rgba(0, 1, 1, 0.15);
   transform: translateX(-50%);
+
+  animation-name: slide-out;
+  animation-duration:  0.6s;
+  animation-fill-mode: forwards;
 }
 
 .booking-form {
@@ -567,6 +578,17 @@ input[type=number] {
   padding-bottom: 17px;
 }
 
+.booking-popover-show {
+  display: block;
+
+  animation-name: slide-in;
+  animation-duration: 0.6s;
+}
+
+.booking-popover-error {
+  animation-name: shake;
+  animation-duration: 0.6s;
+}
 
 .site-map img {
   display: block;
@@ -1126,4 +1148,48 @@ input[type=number] {
 
 .footer-copyright-logo:active path {
   fill: #bdbbbc;
+}
+
+@keyframes slide-in {
+  0% {
+    transform: translateY(-100%) translateX(-50%);
+  }
+
+  100% {
+    transform: translateY(0) translateX(-50%);
+  }
+}
+
+@keyframes slide-out {
+  0% {
+    transform: translateY(0) translateX(-50%);
+    display: block;
+  }
+
+  100% {
+    transform: translateY(-100%) translateX(-50%);
+    display: none;
+  }
+}
+
+@keyframes shake {
+  0%,
+  100% {
+    transform: translateX(-50%);
+  }
+
+  10%,
+  30%,
+  50%,
+  70%,
+  90% {
+    transform: translateX(-51%);
+  }
+
+  20%,
+  40%,
+  60%,
+  80% {
+    transform: translateX(-49%);
+  }
 }
