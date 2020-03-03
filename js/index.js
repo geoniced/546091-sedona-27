@@ -10,6 +10,7 @@ var bookingAdults = form.querySelector('[name=booking-adults]');
 var bookingChildren = form.querySelector('[name=booking-children]');
 
 var isEmptyFields = false;
+var isWrongAmount = false;
 var isStorageSupport = true;
 var peopleBooked = {};
 
@@ -21,38 +22,51 @@ try {
 }
 
 popover.classList.remove('booking-popover-show');
+popover.classList.add('booking-popover-hide');
 
 popoverButton.addEventListener("click", function(evt) {
   evt.preventDefault();
 
-  popover.classList.toggle('booking-popover-show');
   popover.classList.remove('booking-popover-error');
 
-  checkIn.focus();
+  if (popover.classList.contains('booking-popover-show')) {
+    window.removeEventListener('keydown', keydownHandler);
+  } else {
+    window.addEventListener('keydown', keydownHandler);
 
-  if (peopleBooked.adults && peopleBooked.children) {
-    bookingAdults.value = peopleBooked.adults;
-    bookingChildren.value = peopleBooked.children;
+    checkIn.focus();
+
+    if (peopleBooked.adults && peopleBooked.children) {
+      bookingAdults.value = peopleBooked.adults;
+      bookingChildren.value = peopleBooked.children;
+    }
   }
+
+  popover.classList.toggle('booking-popover-show');
+  popover.classList.toggle('booking-popover-hide');
 });
 
-bookingButton.addEventListener('click', function(evt) {
+form.addEventListener('submit', function(evt) {
   isEmptyFields = !checkIn.value || !checkOut.value || !bookingAdults.value || !bookingChildren.value;
-  if (isEmptyFields) {
+  isWrongAmount = (bookingAdults.value <= 0) || (bookingChildren.value < 0);
+  if (isEmptyFields || isWrongAmount) {
     evt.preventDefault();
     popover.classList.remove('booking-popover-error');
     popover.offsetWidth = popover.offsetWidth;
     popover.classList.add('booking-popover-error');
-  } else {
+  } else if (isStorageSupport) {
     localStorage.setItem('adults', bookingAdults.value);
     localStorage.setItem('children', bookingChildren.value);
   }
 });
 
-window.addEventListener('keydown', function(evt) {
-  if (evt.keyCode === 27 && popover.classList.contains('booking-popover-show')) {
+function keydownHandler(evt) {
+  if (evt.keyCode === 27) {
     evt.preventDefault();
     popover.classList.remove('booking-popover-show');
+    popover.classList.add('booking-popover-hide');
     popover.classList.remove('booking-popover-error');
+
+    window.removeEventListener('keydown', keydownHandler);
   }
-});
+}

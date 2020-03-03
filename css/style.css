@@ -170,7 +170,7 @@ a {
 
 .main-intro-logo {
   width: 100%;
-  min-height: 507px;
+  min-height: 508px;
   margin-bottom: 60px;
 
   background-color: #55aaff;
@@ -179,8 +179,8 @@ a {
     url("../img/welcome.svg"),
     url("../img/bg-logo.jpg");
   background-position:
-    center 450px,
-    center center,
+    center bottom -1px,
+    center top 76px,
     center -83px;
   background-size: auto, 459px 353px, auto;
   background-repeat: no-repeat;
@@ -190,7 +190,7 @@ a {
   width: 440px;
   padding: 0;
   margin: 0;
-  margin-bottom: 29px;
+  margin-bottom: 28px;
 
   font-size: 21px;
   font-weight: bold;
@@ -399,10 +399,6 @@ a {
   background-color: #ffffff;
   box-shadow: 0 7px 15px 0 rgba(0, 1, 1, 0.15);
   transform: translateX(-50%);
-
-  animation-name: slide-out;
-  animation-duration:  0.6s;
-  animation-fill-mode: forwards;
 }
 
 .booking-form {
@@ -501,8 +497,10 @@ input[type=number] {
   width: 38px;
   height: 38px;
 
-  padding-left: 13px;
+  padding-left: 0;
   padding-right: 0;
+
+  text-align: center;
 }
 
 .booking-number-field {
@@ -579,10 +577,14 @@ input[type=number] {
 }
 
 .booking-popover-show {
-  display: block;
-
   animation-name: slide-in;
   animation-duration: 0.6s;
+}
+
+.booking-popover-hide {
+  animation-name: slide-out;
+  animation-duration:  0.6s;
+  animation-fill-mode: forwards;
 }
 
 .booking-popover-error {
@@ -601,6 +603,7 @@ input[type=number] {
   width: 1200px;
   height: 593px;
   margin: 0;
+  margin-bottom: -8px;
   padding: 0;
 }
 
@@ -927,7 +930,7 @@ input[type=number] {
 }
 
 .list-sort-type a {
-  margin-right: 12px;
+  margin-right: 9px;
 
   color: #cacaca;
 }
