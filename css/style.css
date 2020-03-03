@@ -1200,12 +1200,10 @@ input[type=number] {
 @keyframes slide-out {
   0% {
     transform: translateY(0) translateX(-50%);
-    display: block;
   }
 
   100% {
     transform: translateY(-100%) translateX(-50%);
-    display: none;
   }
 }
 
