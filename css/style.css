@@ -237,9 +237,23 @@ a {
   background-color: #81b3d2;
 }
 
-.features-item-picture img {
+.feature-picture {
+  flex-shrink: 0;
+
   width: 800px;
   height: 256px;
+
+  background-repeat: no-repeat;
+}
+
+.feature-picture-1 {
+  background-image: url("../img/feature-picture-1.jpg");
+  background-position: center -78px;
+}
+
+.feature-picture-2 {
+  background-image: url("../img/feature-picture-2.jpg");
+  background-position: center -76px;
 }
 
 .features-item-picture-reversed .features-item-picture-info {
