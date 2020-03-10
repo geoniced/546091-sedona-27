@@ -214,7 +214,7 @@ a {
 }
 
 .features h3 {
-  width: 175px;
+  width: 151px;
   margin: 0;
 
   font-size: 21px;
@@ -235,36 +235,30 @@ a {
   text-align: center;
 
   background-color: #81b3d2;
+  background-repeat: no-repeat;
 }
 
-.feature-picture {
-  flex-shrink: 0;
-
-  width: 800px;
-  height: 256px;
-
-  background-repeat: no-repeat;
+.features-item-picture-reversed {
+  justify-content: flex-end;
 }
 
 .feature-picture-1 {
   background-image: url("../img/feature-picture-1.jpg");
-  background-position: center -78px;
+  background-position: right -78px;
 }
 
 .feature-picture-2 {
   background-image: url("../img/feature-picture-2.jpg");
-  background-position: center -76px;
+  background-position: left -76px;
 }
 
-.features-item-picture-reversed .features-item-picture-info {
-  order: 1;
-}
 
 .features-item-picture-info {
   display: flex;
   flex-direction: column;
   align-items: center;
 
+  width: 400px;
   padding-top: 46px;
   padding-left: 50px;
   padding-right: 49px;
@@ -379,7 +373,7 @@ a {
 .booking h2 {
   padding: 0;
   margin: 0;
-  margin-bottom: 22px;
+  margin-bottom: 24px;
 
   font-size: 30px;
   line-height: 36px;
@@ -390,9 +384,11 @@ a {
 .booking p {
   padding: 0;
   margin: 0;
-  margin-bottom: 45px;
+  margin-bottom: 47px;
+
   color: #333333;
   text-align: center;
+  line-height: 24px;
 }
 
 .booking .button {
@@ -619,6 +615,8 @@ input[type=number] {
   margin: 0;
   margin-bottom: -8px;
   padding: 0;
+
+  border: none;
 }
 
 .site-map img {
@@ -647,7 +645,7 @@ input[type=number] {
 
   margin: 0;
   padding-top: 27px;
-  padding-bottom: 20px;
+  padding-bottom: 22px;
   padding-left: 72px;
   padding-right: 60px;
 }
@@ -690,7 +688,7 @@ input[type=number] {
 }
 
 .filter-option {
-  margin-bottom: 20px;
+  margin-bottom: 22px;
 }
 
 .filter-option:last-child {
@@ -702,7 +700,10 @@ input[type=number] {
 
   display:block;
 
+  padding-top: 3px;
   padding-left: 40px;
+
+  line-height: 21px;
 }
 
 .filter-input-checkbox + label::before {
@@ -854,10 +855,13 @@ input[type=number] {
 .filter-button {
   display: block;
   margin: 0 auto;
-  padding: 6px 35px;
+  padding-top: 6px;
+  padding-bottom: 5px;
+  padding-left: 35px;
+  padding-right: 33px;
 
   font-weight: normal;
-  line-height: 20px;
+  line-height: 21px;
 
   background-color: transparent;
   border: 2px solid #ffffff;
@@ -881,10 +885,10 @@ input[type=number] {
   flex-wrap: wrap;
   align-items: baseline;
 
-  padding-top: 34px;
+  padding-top: 30px;
   padding-left: 71px;
   padding-right: 73px;
-  padding-bottom: 31px;
+  padding-bottom: 30px;
 
   font-size: 12px;
   line-height: 18px;
@@ -896,6 +900,7 @@ input[type=number] {
   padding: 0;
 
   font-size: 21px;
+  line-height: 26px;
 }
 
 .list-controls p {
@@ -1055,10 +1060,12 @@ input[type=number] {
   max-width: 150px;
 
   color: #333333;
+
+  line-height: 21px;
 }
 
 .hotel-description-column .button {
-  margin-top: 11px;
+  margin-top: 14px;
 }
 
 .hotel-review {
@@ -1084,14 +1091,14 @@ input[type=number] {
 
 .hotel-rating span {
   display: inline-block;
-  padding-top: 1px;
+  padding-top: 3px;
   padding-right: 13px;
-  padding-bottom: 0;
+  padding-bottom: 3px;
   padding-left: 15px;
-
 
   color: #666666;
   vertical-align: top;
+  line-height: 21px;
 
   background-color: #f2f2f2;
 }
@@ -1119,11 +1126,20 @@ input[type=number] {
   width: 224px;
   margin: 0;
   padding: 0;
+  padding-top: 1px;
 
   font-size: 21px;
-  line-height: 30px;
+  line-height: 26px;
   font-weight: bold;
   text-align: left;
+}
+
+.contacts-phone {
+  display: block;
+
+  margin-top: 6px;
+
+  color: #000000;
 }
 
 .footer-social {
@@ -1135,7 +1151,7 @@ input[type=number] {
   margin: 0;
   margin-right: 52px;
   padding: 0;
-  padding-top: 5px;
+  padding-top: 6px;
 
   list-style: none;
 }
