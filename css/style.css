@@ -117,24 +117,35 @@ a {
 
   margin: 0;
   padding: 0;
+  padding-left: 72px;
+  padding-right: 72px;
 
   list-style: none;
 }
 
-.site-navigation a {
+.site-navigation li {
   display: block;
   width: 240px;
   min-height: 56px;
   padding-top: 14px;
   padding-bottom: 15px;
 
-  font-weight: bold;
-  text-align: center;
-  color: #000000;
+  text-align: left;
+}
+
+.site-navigation li:nth-child(4n + 3),
+.site-navigation li:nth-child(4n) {
+  text-align: right;
 }
 
 .site-navigation li:nth-child(4n - 2) {
-  margin-right: 240px;
+  margin-right: 96px;
+}
+
+.site-navigation a {
+  font-weight: bold;
+  text-align: center;
+  color: #000000;
 }
 
 .site-navigation a:hover,
@@ -450,6 +461,7 @@ a {
 
 .booking-form input {
   width: 346px;
+  height: 38px;
   padding: 0;
   padding-top: 4px;
   padding-left: 10px;
