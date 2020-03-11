@@ -1,9 +1,10 @@
-*, *::before, *::after {
+html {
+  background-color: #f2f2f2;
   box-sizing: border-box;
 }
 
-html {
-  background-color: #f2f2f2;
+*, *::before, *::after {
+  box-sizing: inherit;
 }
 
 body {
@@ -499,6 +500,7 @@ input[type=number] {
 .booking-form input:focus {
   background-color: #ffffff;
   border: 2px solid #e5e5e5;
+  outline: none;
 }
 
 .booking-columns-wrapper {
@@ -1000,6 +1002,9 @@ input[type=number] {
 }
 
 .hotels-list h3 {
+  max-width: 760px;
+  margin-bottom: 7px;
+
   font-size: 21px;
   line-height: 26px;
 }
@@ -1051,7 +1056,7 @@ input[type=number] {
 
 .hotel-description-columns {
   display: flex;
-  justify-content: space-between;
+  flex-wrap: wrap;
 }
 
 .hotel-description-column {
@@ -1099,8 +1104,7 @@ input[type=number] {
   margin-right: 0;
 }
 
-.hotel-rating span {
-  display: inline-block;
+.hotel-rating {
   padding-top: 3px;
   padding-right: 13px;
   padding-bottom: 3px;
@@ -1182,6 +1186,10 @@ input[type=number] {
   width: 46px;
   height: 48px;
   padding: 0;
+}
+
+.button-social:active svg {
+  opacity: 0.3;
 }
 
 .footer-copyright {
