@@ -141,18 +141,40 @@
             <div class="booking-column">
               <label for="booking-adults">Взрослые:</label>
               <div class="booking-number-field">
-                <button type="button" class="button booking-number-button booking-number-minus"><span class="visually-hidden">Плюс</span></button>
+                <button type="button" class="button booking-number-button booking-number-minus">
+                  <span class="visually-hidden">Минус</span>
+                  <svg width="12" height="12">
+                    <line x1="0" y1="6" x2="12" y2="6" stroke-width="3" stroke="#aaabab"/>
+                  </svg>
+                </button>
                 <input class="booking-input-number" type="number" name="booking-adults" id="booking-adults" placeholder="2" value="">
-                <button type="button" class="button booking-number-button booking-number-plus"><span class="visually-hidden">Минус</span></button>
+                <button type="button" class="button booking-number-button booking-number-plus">
+                  <span class="visually-hidden">Плюс</span>
+                  <svg width="12" height="12">
+                    <line x1="6" y1="0" x2="6" y2="12" stroke-width="3" stroke="#aaabab"/>
+                    <line x1="0" y1="6" x2="12" y2="6" stroke-width="3" stroke="#aaabab"/>
+                  </svg>
+                </button>
               </div>
             </div>
 
             <div class="booking-column">
               <label for="booking-children">Дети:</label>
               <div class="booking-number-field">
-                <button type="button" class="button booking-number-button booking-number-minus"><span class="visually-hidden">Плюс</span></button>
+                <button type="button" class="button booking-number-button booking-number-minus">
+                  <span class="visually-hidden">Минус</span>
+                  <svg width="12" height="12">
+                    <line x1="0" y1="6" x2="12" y2="6" stroke-width="3" stroke="#aaabab"/>
+                  </svg>
+                </button>
                 <input class="booking-input-number" type="number" name="booking-children" id="booking-children" placeholder="0" value="">
-                <button type="button" class="button booking-number-button booking-number-plus"><span class="visually-hidden">Минус</span></button>
+                <button type="button" class="button booking-number-button booking-number-plus">
+                  <span class="visually-hidden">Плюс</span>
+                  <svg width="12" height="12">
+                    <line x1="6" y1="0" x2="6" y2="12" stroke-width="3" stroke="#aaabab"/>
+                    <line x1="0" y1="6" x2="12" y2="6" stroke-width="3" stroke="#aaabab"/>
+                  </svg>
+                </button>
               </div>
             </div>
           </div>

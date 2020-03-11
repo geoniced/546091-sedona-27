@@ -532,9 +532,10 @@ input[type=number] {
 }
 
 .booking-number-button {
-  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 
-  display: block;
   width: 38px;
   height: 38px;
   padding: 0;
@@ -549,49 +550,13 @@ input[type=number] {
   background-color: #f2f2f2;
 }
 
-.booking-number-button:hover::before,
-.booking-number-button:hover::after,
-.booking-number-button:focus::before,
-.booking-number-button:focus::after {
-  background-color: #000000;
+.booking-number-button:hover line,
+.booking-number-button:focus line {
+  stroke: #000000;
 }
 
-.booking-number-button:active::before,
-.booking-number-button:active::after {
-  background-color: #81b3d2;
-}
-
-.booking-number-minus::before {
-  content: "";
-  position: absolute;
-  top: 50%;
-  left: 50%;
-
-  width: 12px;
-  height: 3px;
-
-  background-color: #aaabab;
-  transform: translateX(-50%) translateY(-50%);
-}
-
-.booking-number-plus::before,
-.booking-number-plus::after {
-  content: "";
-  position: absolute;
-
-  width: 12px;
-  height: 3px;
-
-  background-color: #aaabab;
-
-}
-
-.booking-number-plus::before {
-  transform: translateX(-50%) translateY(-50%);
-}
-
-.booking-number-plus::after {
-  transform: translateX(-50%) translateY(-50%) rotate(90deg);
+.booking-number-button:active line {
+  stroke: #81b3d2;
 }
 
 .booking-button {
