@@ -1002,7 +1002,6 @@ input[type=number] {
 }
 
 .hotels-list h3 {
-  max-width: 760px;
   margin-bottom: 7px;
 
   font-size: 21px;
@@ -1033,6 +1032,7 @@ input[type=number] {
   flex-direction: column;
   justify-content: space-between;
 
+  max-width: 760px;
   margin-left: 30px;
 }
 
