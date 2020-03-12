@@ -444,7 +444,10 @@ a {
 
 .booking-calendar {
   position: absolute;
+  top: 50%;
   right: 9px;
+
+  transform: translateY(-50%);
 }
 
 .booking-calendar path {
@@ -773,6 +776,7 @@ input[type=number] {
 
 .cost-controls input {
   width: 50px;
+  height: 32px;
   margin: 0;
 
   color: inherit;
