@@ -119,6 +119,7 @@ a {
   position: absolute;
   top: 0;
   left: 50%;
+  z-index: 1;
 
   transform: translateX(-50%);
 }
@@ -193,6 +194,8 @@ a {
 }
 
 .main-intro-logo {
+  position: relative;
+
   width: 100%;
   min-height: 508px;
   margin-bottom: 60px;
@@ -200,14 +203,20 @@ a {
   background-color: #55aaff;
   background-image:
     url("../img/polygon.png"),
-    url("../img/welcome.svg"),
     url("../img/bg-logo.jpg");
   background-position:
     center bottom -1px,
-    center top 76px,
     center -83px;
-  background-size: auto, 459px 353px, auto;
+  background-size: auto, auto;
   background-repeat: no-repeat;
+}
+
+.main-intro-logo .logo-welcome {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+
+  transform: translateX(-50%) translateY(-50%);
 }
 
 .main-intro-slogan {
@@ -514,6 +523,8 @@ input[type=number] {
 .booking-form label {
   display: block;
   width: 112px;
+
+  letter-spacing: 0.2px;
 }
 
 .booking-form input:hover{
@@ -1115,7 +1126,7 @@ input[type=number] {
   justify-content: space-between;
   padding-top: 30px;
   padding-right: 101px;
-  padding-left: 124px;
+  padding-left: 129px;
   padding-bottom: 30px;
 
   background-color: #ffffff;
@@ -1124,6 +1135,7 @@ input[type=number] {
 
 .main-footer-shifted {
   margin-top: -120px;
+  padding-left: 124px;
 }
 
 .footer-contacts {
@@ -1153,11 +1165,15 @@ input[type=number] {
 
   width: 150px;
   margin: 0;
-  margin-right: 52px;
+  margin-right: 58px;
   padding: 0;
   padding-top: 6px;
 
   list-style: none;
+}
+
+.main-footer-shifted .footer-social {
+  margin-right: 52px;
 }
 
 .footer-social li {
