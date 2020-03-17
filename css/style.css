@@ -303,6 +303,7 @@ a {
 }
 
 .features-item-picture-info p {
+  max-width: 310px;
   margin-bottom: 20px;
 
   line-height: 21px;
@@ -858,7 +859,8 @@ input[type=number] {
   left: 80%;
 }
 
-.range-toggle:hover {
+.range-toggle:hover,
+.range-toggle:focus {
   background-color: #1c4f80;
 
   transform: scale(1.1);
